@@ -9,6 +9,8 @@ Each VM runs ubuntu server.
 Custom setup for each node is automated with a Ansible playbook.
 
 # Kubernetes journal
+## [2025-04-23]
+  - Run a command in a pod and view the pod logs with the result
 ## [2025-04-19]
   - Run commands inside pod, open shell inside pod, install packages
 ## [2025-04-15]
