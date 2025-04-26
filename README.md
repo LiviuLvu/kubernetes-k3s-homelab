@@ -9,9 +9,11 @@ Each VM runs ubuntu server.
 Custom setup for each node is automated with a Ansible playbook.
 
 # Kubernetes journal
+## [2025-04-26]
+  - Run pod with environment variable
 ## [2025-04-24]
   - Run a task then delete pod automatically
-  - Wiew logs from previous pod instance, after a crash restart
+  - View logs from previous pod instance, after a crash restart
 ## [2025-04-23]
   - Run a command in a pod and view the pod logs with the result
 ## [2025-04-19]
