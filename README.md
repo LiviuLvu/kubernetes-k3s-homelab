@@ -9,6 +9,10 @@ Each VM runs ubuntu server.
 Custom setup for each node is automated with a Ansible playbook.
 
 # Kubernetes journal
+## [2025-04-27]
+  - Create pod with multiple containers
+  - Create pod with initContainers and shared volumes
+  - Test access to shared volume on opened port
 ## [2025-04-26]
   - Run pod with environment variable
 ## [2025-04-24]
