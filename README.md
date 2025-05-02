@@ -9,7 +9,7 @@ Each VM runs ubuntu server.
 Custom setup for each node is automated with a Ansible playbook.
 
 # Kubernetes journal
-## [2025-04-28]
+## [2025-05-02]
   - Use taint to repel a pod from a node
   - Create node based on nodeSelector and tolerations
 ## [2025-04-28]
