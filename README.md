@@ -10,6 +10,9 @@ Custom setup for each node is automated with a Ansible playbook.
 
 # Kubernetes journal
 ## [2025-04-28]
+  - Use taint to repel a pod from a node
+  - Create node based on nodeSelector and tolerations
+## [2025-04-28]
   - Generate yaml file with labeled, annotated pod
   - Edit, add, delete labels and annotations on running pods
 ## [2025-04-27]
