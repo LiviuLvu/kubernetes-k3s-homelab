@@ -4,8 +4,9 @@ metadata:
   creationTimestamp: null
   name: echojob
 spec:
-  completions: 4
-  parallelism: 3
+  completions: 3
+  parallelism: 2
+  ttlSecondsAfterFinished: 10
   template:
     metadata:
       creationTimestamp: null
@@ -14,7 +15,7 @@ spec:
       - command:
         - /bin/sh
         - -c
-        - echo hello;sleep 10;echo world
+        - echo hello;sleep 2;echo world
         image: busybox
         name: echojob
         resources: {}
