@@ -9,7 +9,7 @@ Each VM runs ubuntu server.
 Custom setup for each node is automated with a Ansible playbook.
 
 # Kubernetes journal
-## [2025-05-04]
+## [2025-05-05]
   - Create job that runs simple command, set nr of completions, parallel runs, limit job time
 ## [2025-05-04]
   - Create deployments, update image versions, scale replicasets
