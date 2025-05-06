@@ -9,7 +9,10 @@ Each VM runs ubuntu server.
 Custom setup for each node is automated with a Ansible playbook.
 
 # Kubernetes journal
-## [2025-05-02]
+## [2025-05-04]
+  - Create deployments, update image versions, scale replicasets
+  - Check rollout status, history, undo deploy
+## [2025-05-03]
   - Create a canary deploy
   - Scale the second deploy to 100%, delete the first app v1
 ## [2025-05-02]
