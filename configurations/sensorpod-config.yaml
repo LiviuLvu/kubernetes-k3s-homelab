@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  var1: watersensor
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: sensors

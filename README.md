@@ -9,6 +9,8 @@ Each VM runs ubuntu server.
 Custom setup for each node is automated with a Ansible playbook.
 
 # Kubernetes journal
+## [2025-05-08]
+  - Use configmap to create env variables in pods and volumes
 ## [2025-05-07]
   - Use cronjobs with limits on start, duration to run repeat tasks at time intervals
   - Create jobs from cronjob

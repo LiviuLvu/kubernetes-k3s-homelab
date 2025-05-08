@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: cmvolume
+  name: cmvolume
+spec:
+  volumes:
+  - name: config-volume
+    configMap:
+      name: cmvolume
+  containers:
+  - image: nginx
+    name: cmvolume
+    resources: {}
+    volumeMounts:
+    - name: config-volume
+      mountPath: /etc/config
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}

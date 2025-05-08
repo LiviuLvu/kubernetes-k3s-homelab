@@ -1,0 +1,2 @@
+var1=watersensor
+var2=smokesensor
