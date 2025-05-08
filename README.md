@@ -9,6 +9,9 @@ Each VM runs ubuntu server.
 Custom setup for each node is automated with a Ansible playbook.
 
 # Kubernetes journal
+## [2025-05-07]
+  - Use cronjobs with limits on start, duration to run repeat tasks at time intervals
+  - Create jobs from cronjob
 ## [2025-05-05]
   - Create job that runs simple command, set nr of completions, parallel runs, limit job time
 ## [2025-05-04]
