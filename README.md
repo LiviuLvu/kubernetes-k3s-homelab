@@ -10,6 +10,9 @@ Custom setup for each node is automated with a Ansible playbook.
 
 # Kubernetes journal
 ## [2025-05-08]
+  - Use service account with admin user to login into kubernetes-dashboard
+  - Attempt to access kubernetes-dashboard from outside cluster using ingress
+## [2025-05-08]
   - Use configmap to create env variables in pods and volumes
 ## [2025-05-07]
   - Use cronjobs with limits on start, duration to run repeat tasks at time intervals
