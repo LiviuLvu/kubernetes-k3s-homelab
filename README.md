@@ -9,6 +9,8 @@ Each VM runs ubuntu server.
 Custom setup for each node is automated with a Ansible playbook.
 
 # Kubernetes journal
+## [2025-05-31]
+  - Use ingress to a service to access a basic deploy
 ## [2025-05-20]
   - Use service account with admin user to login into kubernetes-dashboard
   - Attempt to access kubernetes-dashboard from outside cluster using ingress
