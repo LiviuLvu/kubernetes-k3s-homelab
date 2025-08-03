@@ -1,12 +1,12 @@
-# K3S Homelab
-This document is a record of steps on my kubernetes journey.    
-It can be viewed as a changelog.md highlighting most important changes to this repository. 
+# K3S Experiments
+This repository is a personal changelog of Kubernetes experiments running on a small home lab.
 
-# Cluster overview
-The homelab runs on a k3s distribution of kubernetes. One control node and 3 worker nodes.
-The cluster runs on virtual machines provided by UTM
-Each VM runs ubuntu server.
-Custom setup for each node is automated with a Ansible playbook.
+## Cluster overview
+My homelab runs on a k3s distribution of kubernetes. One control node and 3 worker nodes.  
+The nodes run on UTM virtual machines with Linux OS: Ubuntu 24.04 LTS. 
+ 
+Follow my blog for more info about how I use my home lab to run Kubernetes and other tools:
+[liviu.pages.dev](https://liviu.pages.dev/)
 
 # Kubernetes journal
 ## [2025-05-31]
