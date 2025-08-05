@@ -9,7 +9,9 @@ Follow my blog for more info about how I use my home lab to run Kubernetes and o
 [liviu.pages.dev](https://liviu.pages.dev/)
 
 # Kubernetes journal
-## [2025-06-02]
+## [2025-08-05]
+  - CKAD prep concepts: volumeMounts, container securityContext, cronJob
+## [2025-08-02]
   - Install headlamp dashboard and make it available on local lan via dns overrides in OPNsense
 ## [2025-05-31]
   - Use ingress to a service to access a basic deploy
