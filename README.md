@@ -9,7 +9,7 @@ Follow my blog for more info about how I use my home lab to run Kubernetes and o
 [liviu.pages.dev](https://liviu.pages.dev/)
 
 # Kubernetes journal
-## [2025-08-05]
+## [2025-08-06]
   - CKAD prep: persistentVolume, persistentVolumeClaim, request pvc for a pod 
 ## [2025-08-05]
   - CKAD prep concepts: volumeMounts, container securityContext, cronJob
