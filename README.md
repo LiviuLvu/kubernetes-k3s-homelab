@@ -10,6 +10,8 @@ Follow my blog for more info about how I use my home lab to run Kubernetes and o
 
 # Kubernetes journal
 ## [2025-08-05]
+  - CKAD prep: persistentVolume, persistentVolumeClaim, request pvc for a pod 
+## [2025-08-05]
   - CKAD prep concepts: volumeMounts, container securityContext, cronJob
 ## [2025-08-02]
   - Install headlamp dashboard and make it available on local lan via dns overrides in OPNsense

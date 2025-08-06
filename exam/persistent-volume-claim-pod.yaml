@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pvcpod
+spec:
+  containers:
+    - name: pvcapp
+      image: nginx:1.21.6
+      volumeMounts:
+      - mountPath: "/var/app/config"
+        name: appconfig
+  volumes:
+    - name: appconfig
+      persistentVolumeClaim:
+        claimName: pvc
+
