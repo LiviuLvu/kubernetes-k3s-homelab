@@ -1,0 +1,25 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+  labels:
+    app.kubernetes.io/name: MyApp
+spec:
+  volumes:
+  - name: appshare
+    emptyDir: {}
+  initContainers:
+  - name: configurer
+    volumeMounts:
+    - name: appshare
+      mountPath: /usr/shared/app
+    image: busybox
+    command: ['sh', '-c', "wget --directory-prefix /usr/shared/app https://raw.githubusercontent.com/bmuschko/ckad-crash-course/master/exercises/07-init-container/app/config/config.json"]
+  containers:
+  - name: web
+    volumeMounts:
+    - name: appshare
+      mountPath: /usr/shared/app
+    image: bmuschko/nodejs-read-config:1.0.0
+    ports:
+    - containerPort: 8080
