@@ -9,6 +9,8 @@ Follow my blog for more info about how I use my home lab to run Kubernetes and o
 [liviu.pages.dev](https://liviu.pages.dev/)
 
 # Kubernetes journal
+## [2025-08-10]
+  - CKAD prep: run multicontainer patterns: ambassador, adapter
 ## [2025-08-07]
   - CKAD prep: inside a pod run init contaier that downloads a config file in a shared volume
 ## [2025-08-06]
