@@ -1,0 +1,67 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: labeled
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  annotations:
+    contact: "John Doe"
+    commit: "2d3mg3"
+  labels:
+    run: labeled-pods
+    env: prod
+    team: shiny
+  name: frontend
+  namespace: labeled
+spec:
+  containers:
+  - image: nginx:1.25.5-alpine
+    name: frontend
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  annotations:
+    contact: "Marry Harris"
+  labels:
+    run: labeled-pods
+    env: prod
+    team: legacy
+    app: v1.2.4
+  name: backend 
+  namespace: labeled
+spec:
+  containers:
+  - image: nginx:1.25.5-alpine
+    name: backend
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: labeled-pods
+    env: prod
+    team: storage
+  name: database
+  namespace: labeled
+spec:
+  containers:
+  - image: nginx:1.25.5-alpine
+    name: database
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Never
+status: {}
