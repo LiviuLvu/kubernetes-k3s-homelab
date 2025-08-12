@@ -9,6 +9,7 @@ Follow my blog for more info about how I use my home lab to run Kubernetes and o
 [liviu.pages.dev](https://liviu.pages.dev/)
 
 # Kubernetes journal
+- CKAD prep: Deployment replicaset, versions rollout, scale up/down
 - CKAD prep: view pods filtered by labels, annotations
 - CKAD prep: run multicontainer patterns: ambassador, adapter
 - CKAD prep: inside a pod run init contaier that downloads a config file in a shared volume
