@@ -9,6 +9,7 @@ Follow my blog for more info about how I use my home lab to run Kubernetes and o
 [liviu.pages.dev](https://liviu.pages.dev/)
 
 # Kubernetes journal
+- CKAD prep: kustomize patch deployment with env vars from generated secret
 - CKAD prep: blue green deployment, service redirect requests to new deploy
 - CKAD prep: horizontal pod autoscaler
 - CKAD prep: Deployment replicaset, versions rollout, scale up/down 
