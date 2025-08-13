@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nginx-blue
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      version: blue
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        version: blue
+    spec:
+      containers:
+      - image: nginx:1.23.0
+        name: nginx
+        ports:
+        - containerPort: 80
+status: {}
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nginx-green
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      version: green
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        version: green
+    spec:
+      containers:
+      - image: nginx:1.23.4
+        name: nginx
+        ports:
+        - containerPort: 80
+status: {}
